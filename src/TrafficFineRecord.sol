@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+pragma solidity ^0.8.19;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 
@@ -20,7 +20,7 @@ contract TrafficFineRecord is Ownable {
     event FineDeleted(string indexed licenseNumber, uint256 fineIndex);
     event AllFinesDeleted(string indexed licenseNumber);
 
-    constructor(address _initialOwner) Ownable(_initialOwner) {}
+    constructor() Ownable() {}
 
     function recordFine(
         string memory _licenseNumber,

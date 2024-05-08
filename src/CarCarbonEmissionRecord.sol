@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.19;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 
@@ -24,7 +24,7 @@ contract CarCarbonEmissionRecord is Ownable {
         _;
     }
 
-    constructor(address _initialOwner) Ownable(_initialOwner) {}
+    constructor() Ownable() {}
 
     function addEmissionRecord(
         string memory _chassisNumber,

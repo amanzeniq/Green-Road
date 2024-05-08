@@ -14,6 +14,7 @@ Foundry consists of:
 https://book.getfoundry.sh/
 
 ## Usage
+alias forge='~/.foundry/bin/forge'
 
 ### Build
 
